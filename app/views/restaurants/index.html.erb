@@ -1,0 +1,10 @@
+<h1>je susi dans l'index</h1>
+
+<% @restaurants.each do |restaurant| %>
+<%= link_to "#{restaurant.name}", restaurant_path(restaurant) %> <br>
+<%= restaurant.address %> <br>
+<%= restaurant.phone_number %> <br>
+<%= restaurant.category %> <br> <br>
+<% end %>
+
+<%= link_to "Create a new Restaurant", new_restaurant_path %>
